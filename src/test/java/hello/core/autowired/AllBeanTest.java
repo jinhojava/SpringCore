@@ -25,6 +25,9 @@ public class AllBeanTest {
     static class DiscountService {
         private final Map<String, DiscountPolicy> policyMap;
         private final List<DiscountPolicy> policies;
+
+        //클래스의 완전한 이름과 해시 코드가 기본적으로 포함된 문자열이 반환됩니다. 이는 자바의 기본 동작
+        //키로는 클래스의 이름이 사용되고, 값으로는 해당 객체의 해시 코드가 사용될 수 있습니다
         public DiscountService(Map<String, DiscountPolicy> policyMap,
                                List<DiscountPolicy> policies) {
             this.policyMap = policyMap;
